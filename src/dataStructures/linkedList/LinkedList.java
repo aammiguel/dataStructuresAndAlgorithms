@@ -158,5 +158,27 @@ public class LinkedList
         return temp;
     }
 
+    /**
+     * Get a Node by its index
+     * iterates through the linked list and find the node with the index
+     * @param index takes an index to look for the item
+     * @return the node in that index
+     */
+    public Node get(int index)
+    {
+        if(index < 0 || index >= length)
+        {
+            return null;
+        }
+        Node temp;
+        temp = head;
+
+        for(int i = 0 ; i < index ; i++)
+        {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
 
 }
