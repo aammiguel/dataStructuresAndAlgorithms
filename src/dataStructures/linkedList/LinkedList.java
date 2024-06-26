@@ -180,5 +180,23 @@ public class LinkedList
         return temp;
     }
 
+    /**
+     * set
+     * use the get method to get the item we want to change and assign it a new value
+     * @param index
+     * @param value
+     * @return
+     */
+    public boolean set(int index, int value)
+    {
+        Node temp = get(index);
+        if(temp != null)
+        {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
 
 }
