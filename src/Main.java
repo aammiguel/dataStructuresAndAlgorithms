@@ -1,4 +1,5 @@
 import dataStructures.DoublyLinkedList.DoublyLinkedList;
+import dataStructures.binarysearchtree.BinarySearchTree;
 import dataStructures.linkedList.LinkedList;
 import dataStructures.queue.Queue;
 import dataStructures.stack.Stack;
@@ -31,10 +32,26 @@ public class Main {
 //        mystack.pop();
 //        mystack.printStack();
 
-        Queue myQueue = new Queue(1);
-        myQueue.enqueue(2);
-        System.out.println(myQueue.dequeue().value);
-        myQueue.printQueue();
+//        Queue myQueue = new Queue(1);
+//        myQueue.enqueue(2);
+//        System.out.println(myQueue.dequeue().value);
+//        myQueue.printQueue();
+
+        BinarySearchTree myBST = new BinarySearchTree();
+        myBST.insert(47);
+        myBST.insert(21);
+        myBST.insert(76);
+        myBST.insert(18);
+        myBST.insert(27);
+        myBST.insert(52);
+        myBST.insert(82);
+
+        System.out.println( myBST.contains(27));
+        System.out.println(myBST.contains(17));
+
+
+
+        System.out.println(myBST.root.left.right.value);
     }
 
 
