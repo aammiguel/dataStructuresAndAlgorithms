@@ -1,5 +1,6 @@
 import dataStructures.DoublyLinkedList.DoublyLinkedList;
 import dataStructures.linkedList.LinkedList;
+import dataStructures.queue.Queue;
 import dataStructures.stack.Stack;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -23,12 +24,17 @@ public class Main {
 //
 //        myDLL.prinList();
 
-        Stack mystack = new Stack(2);
+//        Stack mystack = new Stack(2);
+//
+//        mystack.push(1);
+//        mystack.push(2);
+//        mystack.pop();
+//        mystack.printStack();
 
-        mystack.push(1);
-        mystack.push(2);
-        mystack.pop();
-        mystack.printStack();
+        Queue myQueue = new Queue(1);
+        myQueue.enqueue(2);
+        System.out.println(myQueue.dequeue().value);
+        myQueue.printQueue();
     }
 
 
